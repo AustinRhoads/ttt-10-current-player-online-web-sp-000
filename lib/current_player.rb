@@ -8,3 +8,12 @@ def turn_count (board)
   end
   return counter
 end
+#current player needs to take in the board know how many turns have passed and determin if it is Xs turn or Os turn
+def current_player(board)
+  turns = turn_count(board) % 2
+  if turns == 0
+    return "X"
+  else
+    return "O"
+  end
+end
